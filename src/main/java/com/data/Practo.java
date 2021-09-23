@@ -33,9 +33,9 @@ public class Practo extends Read
 		File f1 = new File("C:\\Users\\91959\\eclipse-workspace\\MiniProject\\txtfolder");
 		boolean b = f1.mkdir();
 		System.out.println("Folder Created Successfully."+b);
-		//File f2 = new File("C:\\\\Users\\\\91959\\\\eclipse-workspace\\\\MiniProject\\\\txtfolder\\\\write.txt");
-		//boolean c = f2.createNewFile();
-		//System.out.println("File Created Successfully."+c);
+		File f2 = new File("C:\\\\Users\\\\91959\\\\eclipse-workspace\\\\MiniProject\\\\txtfolder\\\\write.txt");
+		boolean c = f2.createNewFile();
+		System.out.println("File Created Successfully."+c);
 		Actions Acc = new Actions(driver);
 		Robot r = new Robot();
 		String[] rw = getData();
@@ -66,194 +66,57 @@ public class Practo extends Read
 			Thread.sleep(2000);
 			System.out.println("----------------------------------------------"+rw[i]+"---------------------------------------------");
 			
-			// Hospital 1
+			//Hospital 1
 			
-			WebElement h1 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[2]/div/div[1]/div[1]/div/div[2]/div/a/h2"));
+			WebElement h1 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[3]/div/div[1]/div[1]/div/div[2]/div/a/h2"));
 			System.out.println(h1.getText());
-			WebElement info1 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[2]/div/div[1]/div[2]/div"));
+			WebElement info1 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[3]/div/div[1]/div[2]/div"));
 			System.out.println(info1.getText());
 			System.out.println("=====================================================================================================");
+	
 			// Hospital 2
 			
-			WebElement h2 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[3]/div/div[1]/div[1]/div/div[2]/div/a/h2"));
+			WebElement h2 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[4]/div/div[1]/div[1]/div/div[2]/div/a/h2"));
 			System.out.println(h2.getText());
-			WebElement info2 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[3]/div/div[1]/div[2]/div"));
+			String ps = (h2.getText());
+			WebElement info2 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[4]/div/div[1]/div[2]"));
 			System.out.println(info2.getText());
+			String ps1 =(info2.getText());
 			System.out.println("=====================================================================================================");
-			
+						
 			// Hospital 3
-			
-			WebElement h3 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[4]/div/div[1]/div[1]/div/div[2]/div/a/h2"));
+						
+			WebElement h3 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[5]/div/div[1]/div[1]/div/div[2]/div/a/h2"));
 			System.out.println(h3.getText());
-			WebElement info3 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[4]/div/div[1]/div[2]/div"));
+			WebElement info3 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[5]/div/div[1]/div[2]"));
 			System.out.println(info3.getText());	
+			System.out.println("=====================================================================================================");						
+						
+						
+			// Hospital 4
+						
+			WebElement h4 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[2]/div/div[1]/div[1]/div/div[2]/div/a/h2"));
+			System.out.println(h4.getText());
+			WebElement info4 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[2]/div/div[1]/div[2]"));
+			System.out.println(info4.getText());	
+			System.out.println("=====================================================================================================");
+						
+
+			// Hospital 5
+						
+			WebElement h5 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[8]/div/div[1]/div[1]/div/div[2]/div/a/h2"));
+			System.out.println(h5.getText());
+			WebElement info5 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[8]/div/div[1]/div[2]"));
+			System.out.println(info5.getText());	
 			System.out.println("=====================================================================================================");
 			
-
-				
-			File str1 = new File("C:\\Users\\91959\\eclipse-workspace\\MiniProject\\write.java");
-			Files.write
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-
-				 
-				 /*
-				if (try3 > 3.5)
-				{
-					
-					System.out.println("Hospital Rating is : " +try3);
-				}
-				else if (try6 > 3.5)
-				{
-					WebElement try4 = driver.findElement(By.xpath("(//div [@class = 'u-spacer--bottom-less'])[5]"));
-					String try5 = try4.getText();
-					
-					System.out.println("Hospital Rating is : " +try6);
-				}
-				
-				*/
-			
-			/*
-			
-			
-			//WebElement dtls1 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[2]/div[1]/div/div[3]/div[2]/div/div[1]/div[2]/div"));
-			//System.out.println(dtls1.getText());
-			*/
-			//String data = new String();
-			//data = h1.getText();
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			//File f3 = new File("C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\91959\\\\\\\\\\\\\\\\eclipse-workspace\\\\\\\\\\\\\\\\MiniProject\\\\\\\\\\\\\\\\txtfolder\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\write.txt");
-			
-			
-			//System.out.println("File Written Succesfully.");
-			
-			
-			
-			
-			
-			
-			
-			//ArrayList<String> newTab = new ArrayList<String>(driver.getWindowHandles());
-			//driver.switchTo().window(newTab.get(1));
-		   // driver.close();
-	
-			
-			
-			
-			/*
-			// make new file
-			
-			// create file inside folder
-			
-			
-			// To Write inside File
-			FileWriter f3 = new FileWriter("C:\\\\\\\\Users\\\\\\\\91959\\\\\\\\eclipse-workspace\\\\\\\\MiniProject\\\\\\\\txtfile\\\\\\\\write.txt");
-			BufferedWriter br = new BufferedWriter(f3);
-			br.write("Hello", i, i);
-			*/
-			
+			File fs = new File("C:\\Users\\91959\\eclipse-workspace\\MiniProject\\txtfolder\\write.txt");
+			FileUtils.write(fs, ps);
+			FileUtils.write(fs, ps1);
 			
 			
 			
 		}
-		
-		
-
-			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-/*
-		Thread.sleep(2000);
-		
-		
-		WebElement hos1 = driver.findElement(By.xpath("//*[@id=\"c-omni-container\"]/div/div[2]/div[1]/input"));
-		hos1.sendKeys("Hospital");
-		
-		Robot r = new Robot();
-		
-		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyRelease(KeyEvent.VK_ENTER);
-		
-		Thread.sleep(2000);
-		
-		WebElement acc1 = driver.findElement(By.xpath("//*[@id=\"container\"]/div[3]/div/div[1]/div/div/header/div[1]/div/div[2]/label/div"));
-		acc1.click();
-		
-*/	
-		
-		
-		
-		
-	
 	
 	}
 

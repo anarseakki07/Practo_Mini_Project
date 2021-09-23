@@ -10,7 +10,7 @@ public class Read
 {
 	public static String[] getData() throws IOException 
 	{
-//----------------------------For CITY CHENNAI----------------------------------------------------------//
+
 		File loc = new File ("C:\\Users\\91959\\eclipse-workspace\\MiniProject\\Excel\\cities.xlsx");
 		FileInputStream f = new FileInputStream(loc);
 		Workbook w = new XSSFWorkbook(f);
